@@ -1,0 +1,126 @@
+.main-content{
+    z-index: 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.introduction{
+    width: 90%;
+    margin: 4rem 0;
+    padding: 2rem;
+    margin-bottom: 10rem;
+}
+
+.name-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.greeting{
+    color: #9F7AEA;
+    font-size: 16px;
+}
+
+.name{
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ccd6f6;
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.profession{
+    color: #8892af;
+    font-size: 40px;
+}
+
+.details{
+    color: #6c7692;
+    font-size: 16px;
+}
+
+.checkout-resume-btn-container{
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .checkout-resume-btn-container a
+  {
+    text-decoration: none;
+    border: 2px solid #9F7AEA;
+    padding: 8px;
+    color: #9F7AEA;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .checkout-resume-btn-container a span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .checkout-resume-btn-container a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - 10px);
+    background-color: #0b192e;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .checkout-resume-btn-container a:hover::before {
+    transform: scaleY(0);
+  }
+  
+  .checkout-resume-btn-container a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #0b192e;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  
+  .checkout-resume-btn-container a:hover::after {
+    transform: scaleX(0);
+  }
+
+@media (max-width: 35em){
+    .main-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .introduction{
+        width: 100%;
+        margin: 7rem auto;
+        padding: 0;
+        margin-bottom: 10rem;
+    }
+    .greeting{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .profession{
+        font-size: 30px;
+    }
+    .details{
+        font-size: 16px;
+    }
+}

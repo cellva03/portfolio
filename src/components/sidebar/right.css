@@ -1,0 +1,48 @@
+.right-items a{
+    text-decoration: none;
+    align-items: center;
+    color:#6c7692;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+}
+
+.right-items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+}
+
+.right-items::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background: #6c7692;
+}
+.right{
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    right: 30px;
+}
+
+.right-items > a:hover{
+    color: #9F7AEA;
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: ease;
+}
+
+.right-items:hover::after{
+    background: #9F7AEA;
+}
+
+@media (max-width: 35em){
+    .right{
+        display: none;
+    }
+}

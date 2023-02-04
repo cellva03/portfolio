@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+body{
+    /* background: #0B022D; */
+    background: #0b192e;
+    font-family: 'Fira Code', monospace;
+    /* color: #F7FFF7;  */
+    color: #9F7AEA;
+    overflow-x: hidden;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#spin {
+    animation: spin 2s linear infinite;
+}
+
+/* @keyframes spin {
+    from{ transform: scale(0%); }
+    to{ transform: scale(100%); }
+} */
+
+@keyframes spin {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+
+}
+
+.content{
+    display: flex;
+}

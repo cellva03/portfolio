@@ -1,0 +1,37 @@
+.contact-content{
+    width: 90%;
+    margin: 0 ;
+    margin-bottom: 10rem;
+    padding: 2rem;
+}
+.contact-content section {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-heading{
+    font-size: 25px;
+    color: #ccd6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading::before{
+    position: relative;
+    counter-increment: section 3;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: #9F7AEA;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-details p{
+    color: #a8b2d1;
+    text-align: center;
+}

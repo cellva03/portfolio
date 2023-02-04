@@ -1,0 +1,141 @@
+.archive-content{
+    min-height: 90vh;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin: 10rem auto 5rem auto;
+}
+
+.archive-content h1{
+    color: #ccd6f6;
+    font-size: 50px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-color: transparent;
+    width: 100%;
+}
+
+.head-row{
+    /* display: flex;
+    color: #ccd6f6;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left; */
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    color: #ccd6f6;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+.head-row th{
+    padding: 10px;
+}
+
+.body-row{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: flex;
+    color: #ccd6f6;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.body-row td{
+padding: 10px;
+}
+
+.links{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    color: #8892af;
+}
+
+.links a:hover{
+    color: #9F7AEA;
+}
+
+@media (max-width: 740px){
+    .archive-content{
+        width: 100%;
+        margin: 10rem auto 5rem auto;
+        padding: 0rem;
+        margin-bottom: 10rem;
+    }
+
+    .table-skills{
+        display: none;
+    }
+}
+
+
+.resume-btn-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .resume-btn-containers a
+  {
+    text-decoration: none;
+    border: 2px solid #9F7AEA;
+    padding: 8px;
+    color: #9F7AEA;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .resume-btn-containers a span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .resume-btn-containers a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - 10px);
+    background-color: #0b192e;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .resume-btn-containers a:hover::before {
+    transform: scaleY(0);
+  }
+  
+  .resume-btn-containers a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #0b192e;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  
+  .resume-btn-containers a:hover::after {
+    transform: scaleX(0);
+  }
